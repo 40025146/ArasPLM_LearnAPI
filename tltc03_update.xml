@@ -1,0 +1,15 @@
+Innovator inn = this.getInnovator();
+
+Item itm = inn.newItem("c7 8digino","get");
+itm.setProperty("item_number","test-2");
+itm=itm.apply();
+
+if(itm.isError()==true){
+    return inn.newError(itm.getErrorString());
+}else{
+    return inn.newResult("success");
+}
+
+// itm.setProperty("cn_wo_tmp","10:37");
+
+return itm;

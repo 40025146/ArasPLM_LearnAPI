@@ -1,0 +1,10 @@
+Innovator inn = this.getInnovator();
+
+
+string str=this.getProperty("item_number","");
+string[] arr=str.Split('-');
+string date="aaaa";
+this.setProperty("item_number",arr[0]+date+arr[1]);
+this.apply("edit");
+
+return this;

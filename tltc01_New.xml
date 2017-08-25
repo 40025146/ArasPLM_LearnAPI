@@ -1,0 +1,23 @@
+Innovator inn=this.getInnovator();
+
+/*
+Item itm=inn.newItem("c7 8digino","add");
+itm.setProperty("item_number","test-2");
+itm.setProperty("cn_wo_tmp","test-cn-wo-tmp");
+itm=itm.apply();
+*/
+/*
+Item itm=inn.newItem("c7 8digino","get");
+itm.setProperty("item_number","test-2");
+itm.setProperty("cn_wo_tmp","test-cn-wo-tmp");
+itm=itm.apply();
+*/
+Item itm=inn.newItem("c7 8digino","get");
+// itm.setProperty("item_number","test-2");
+// itm.setAttribute("select","item_number");
+itm.setAttribute("where","[c7_8digino].cn_wo_tmp like '%cn-wo-tmp'");
+itm=itm.apply();
+
+
+
+return itm;
